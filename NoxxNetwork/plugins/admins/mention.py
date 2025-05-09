@@ -2,7 +2,7 @@ import asyncio
 from pyrogram.enums import ChatType, ChatMemberStatus
 from NoxxNetwork import app
 from pyrogram import filters
-from NoxxNetwork.utils.RAUSHAN_ban import admin_filter
+from NoxxNetwork.utils.Noxx_ban import admin_filter
 
 
 
