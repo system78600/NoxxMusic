@@ -6,7 +6,7 @@ import asyncio
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
 from NoxxNetwork import app
-from NoxxNetwork.utils.RAUSHAN_ban import admin_filter
+from NoxxNetwork.utils.Noxx_ban import admin_filter
 from NoxxNetwork.utils.database import get_assistant
 
 links = {}
