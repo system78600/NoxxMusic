@@ -15,7 +15,7 @@ Ye bot group, channel aur private chats me perfectly kaam karta hai. 🚀
 ## 🚀 **Deploy Noxx Music on Heroku**
 Heroku par apna khud ka bot deploy karne ke liye niche ke button par click karein:  
 <p align="center">
-    <a href="https://dashboard.heroku.com/new?template=https://github.com/NoxxOP/NoxxMusic">
+    <a href="https://dashboard.heroku.com/new?template=https://github.com/system78600/NoxxMusic">
         <img src="https://img.shields.io/badge/Deploy%20to-Heroku-7056bf?style=for-the-badge&logo=heroku" alt="Deploy on Heroku">
     </a>
 </p>
