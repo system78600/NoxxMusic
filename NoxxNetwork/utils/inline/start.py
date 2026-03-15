@@ -1,7 +1,7 @@
 from pyrogram.types import InlineKeyboardButton
 
 import config
-from LOVEMUSIC import app
+from NoxxNetwork import app
 
 
 def start_panel(_):
