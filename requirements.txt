@@ -45,6 +45,8 @@ youtube-search
 youtube-search-python
 flask
 
+flask
 pyrogram==2.0.106
-pytgcalls==2.1.0
+pytgcalls==1.0.1
 python-dotenv
+tgcrypto
