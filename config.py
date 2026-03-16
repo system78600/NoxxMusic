@@ -35,8 +35,8 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Support
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Cricket_Arenaaa")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/The_chillZzone")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/HARRY_UPDATES")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/HARRY_SUPPORT0")
 
 # Assistant Join Link (Fix for InviteHashExpired)
 ASSISTANT_JOIN = getenv("ASSISTANT_JOIN", "")
