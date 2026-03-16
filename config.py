@@ -40,7 +40,7 @@ SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/The_chillZzone")
 
 # Assistant Join Link (Fix for InviteHashExpired)
 ASSISTANT_JOIN = getenv("ASSISTANT_JOIN", "")
-
+AUTO_LEAVING_ASSISTANT = False
 # Spotify
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
