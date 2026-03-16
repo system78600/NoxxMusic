@@ -25,6 +25,7 @@ speedtest-cli
 spotipy
 tgcrypto
 telegraph
+telethon
 unidecode
 youtube-search
 youtube-search-python
