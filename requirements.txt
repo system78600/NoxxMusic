@@ -9,6 +9,7 @@ gitpython
 hachoir
 heroku3
 httpx==0.23.3
+h2
 motor
 numpy
 opencv-python
