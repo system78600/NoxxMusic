@@ -28,3 +28,4 @@ unidecode
 youtube-search
 youtube-search-python
 yt-dlp
+pykeyboard
