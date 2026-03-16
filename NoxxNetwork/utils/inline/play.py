@@ -79,7 +79,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=" 🎄 ᴏᴡɴᴇʀs 🎄 ", url="tg://settings",
             ),
             InlineKeyboardButton(
-                text="🌸 sᴜᴘᴘᴏʀᴛ 🌸", url="https://t.me/+xt0erNFGkY0yNWE1",
+                text="🌸 sᴜᴘᴘᴏʀᴛ 🌸", url="https://t.me/HARRY_SUPPORT0",
             )
         ],
          [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -102,7 +102,7 @@ def stream_markup(_, videoid, chat_id):
                 text="🫒 ᴏᴡɴᴇʀs 🫒", url="tg://settings",
             ),
             InlineKeyboardButton(
-                text="🌸 sᴜᴘᴘᴏʀᴛ 🌸", url="https://t.me/+xt0erNFGkY0yNWE1",
+                text="🌸 sᴜᴘᴘᴏʀᴛ 🌸", url="https://t.me/HARRY_SUPPORT0",
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
