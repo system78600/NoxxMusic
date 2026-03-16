@@ -6,9 +6,9 @@ from pyrogram.errors import (
     InviteRequestSent,
     UserAlreadyParticipant,
     UserNotParticipant,
-    InviteHashExpired
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+
 from NoxxNetwork import app
 from NoxxNetwork.misc import SUDOERS
 from NoxxNetwork.utils.database import (
@@ -17,6 +17,7 @@ from NoxxNetwork.utils.database import (
     is_active_chat,
     is_maintenance,
 )
+
 from config import SUPPORT_CHAT
 from strings import get_string
 
@@ -44,28 +45,22 @@ def UserbotWrapper(command):
 
         if not await is_active_chat(chat_id):
             userbot = await get_assistant(chat_id)
-            try:
-                try:
-                    get = await app.get_chat_member(chat_id, userbot.id)
-                except ChatAdminRequired:
-                    return await message.reply_text(
-                        "➥ Please make me admin and give invite users permission."
-                    )
 
-                if (
-                    get.status == ChatMemberStatus.BANNED
-                    or get.status == ChatMemberStatus.RESTRICTED
-                ):
+            try:
+                member = await app.get_chat_member(chat_id, userbot.id)
+
+                if member.status in [
+                    ChatMemberStatus.BANNED,
+                    ChatMemberStatus.RESTRICTED,
+                ]:
                     return await message.reply_text(
-                        _["call_2"].format(
-                            app.mention, userbot.id, userbot.name, userbot.username
-                        ),
+                        "Assistant is banned in this group.",
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 [
                                     InlineKeyboardButton(
-                                        text="๏ ᴜɴʙᴀɴ ᴀssɪsᴛᴀɴᴛ ๏",
-                                        callback_data=f"unban_assistant",
+                                        text="Unban Assistant",
+                                        callback_data="unban_assistant",
                                     )
                                 ]
                             ]
@@ -73,62 +68,40 @@ def UserbotWrapper(command):
                     )
 
             except UserNotParticipant:
-                if message.chat.username:
-                    invitelink = message.chat.username
-                else:
-                    if chat_id in links:
-                        invitelink = links[chat_id]
-                    else:
-                        try:
-                            invitelink = await app.export_chat_invite_link(chat_id)
-                        except ChatAdminRequired:
-                            return await message.reply_text(
-                                "➥ Please make me admin and give invite users permission."
-                            )
-
-                if "t.me/+" in invitelink:
-                    invitelink = invitelink.replace(
-                        "https://t.me/+", "https://t.me/joinchat/"
-                    )
-
-                myu = await message.reply_text("Assistant joining this chat...")
 
                 try:
-                    await asyncio.sleep(1)
-                    await userbot.join_chat(invitelink)
-                    await myu.delete()
-                    await message.reply_text(
-                        f"{app.mention} Assistant Successfully Joined This Group ✅\n\nId:- **@{userbot.username}**"
+                    link = await app.create_chat_invite_link(chat_id)
+                    invitelink = link.invite_link
+                except ChatAdminRequired:
+                    return await message.reply_text(
+                        "Please make me admin with invite users permission."
                     )
 
-                except InviteHashExpired:
-                    await myu.delete()
-                    return await message.reply_text(
-                        "❌ Invite link expired. Please generate a new invite link."
-                    )
+                msg = await message.reply_text("Assistant joining this chat...")
+
+                try:
+                    await userbot.join_chat(invitelink)
 
                 except InviteRequestSent:
+
                     try:
                         await app.approve_chat_join_request(chat_id, userbot.id)
                     except Exception as e:
-                        return await message.reply_text(
-                            _["call_3"].format(app.mention, type(e).__name__)
-                        )
-
-                    await asyncio.sleep(3)
-                    await myu.delete()
-                    await message.reply_text(
-                        f"{app.mention} Assistant Successfully Joined This Group ✅\n\nId:- **@{userbot.username}**"
-                    )
+                        return await message.reply_text(f"Error: {e}")
 
                 except UserAlreadyParticipant:
                     pass
 
                 except Exception as e:
-                    await myu.delete()
-                    return await message.reply_text(
-                        f"❌ Error while joining assistant:\n`{e}`"
-                    )
+                    return await message.reply_text(f"Assistant join error:\n{e}")
+
+                await asyncio.sleep(2)
+
+                await msg.delete()
+
+                await message.reply_text(
+                    f"{app.mention} Assistant Successfully Joined ✅\n\nAssistant: @{userbot.username}"
+                )
 
                 links[chat_id] = invitelink
 
