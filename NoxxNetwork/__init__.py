@@ -12,7 +12,6 @@ dbb()
 heroku()
 
 app = RAUSHAN()
-api = SafoneAPI()
 userbot = Userbot()
 
 
