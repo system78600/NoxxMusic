@@ -719,3 +719,20 @@ async def remove_banned_user(user_id: int):
     if not is_gbanned:
         return
     return await blockeddb.delete_one({"user_id": user_id})
+
+welcome_db = {}
+
+
+async def get_welcome(chat_id):
+    return welcome_db.get(chat_id)
+
+
+async def set_welcome(chat_id, message):
+    welcome_db[chat_id] = message
+    return True
+
+
+async def remove_welcome(chat_id):
+    if chat_id in welcome_db:
+        del welcome_db[chat_id]
+    return True
