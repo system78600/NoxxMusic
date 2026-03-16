@@ -4,7 +4,6 @@ from NoxxNetwork.core.git import git
 from NoxxNetwork.core.userbot import Userbot
 from NoxxNetwork.misc import dbb, heroku
 
-from SafoneAPI import SafoneAPI
 from .logging import LOGGER
 
 dirr()
