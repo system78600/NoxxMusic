@@ -11,9 +11,9 @@ API_HASH = getenv("API_HASH", "")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 
 # Bot Details
-OWNER_USERNAME = getenv("OWNER_USERNAME", "TMZEROO")
-BOT_USERNAME = getenv("BOT_USERNAME", "Music4vcbot")
-BOT_NAME = getenv("BOT_NAME", "Music Bot")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "TOXIC_HARRY")
+BOT_USERNAME = getenv("BOT_USERNAME", "HarryXMuzicbot")
+BOT_NAME = getenv("BOT_NAME", "HarryXMuzic")
 
 # Database
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
