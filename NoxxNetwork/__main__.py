@@ -37,15 +37,15 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("NoxxNetwork.plugins" + all_module)
-    LOGGER("NoxxNetwork.plugins").info("➽ᴀʟʟ ꜰᴇᴀᴛᴜʀᴇꜱ ʟᴏᴀᴅᴇᴅ ʙʏ ɴᴀɴᴅ ʏᴀᴅᴜᴡᴀɴsʜɪ")
+    LOGGER("NoxxNetwork.plugins").info("➽ᴀʟʟ ꜰᴇᴀᴛᴜʀᴇꜱ ʟᴏᴀᴅᴇᴅ ʙʏ ʜᴀʀʀʏ")
     await userbot.start()
     await RAUSHAN.start()
     await RAUSHAN.decorators()
-    LOGGER("NoxxNetwork").info("➤\n ʀᴇᴘᴏ ᴍᴀᴅᴇ ʙʏ ɴᴀɴᴅ ʏᴀᴅᴜᴡᴀɴsʜɪ")
+    LOGGER("NoxxNetwork").info("➤\n ʀᴇᴘᴏ ᴍᴀᴅᴇ ʙʏ ʜᴀʀʀʏ")
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("NoxxNetwork").info("➤\n Must Join @ShrutiBots on Telegram")
+    LOGGER("NoxxNetwork").info("➤\n Must Join @HarryXMuzicbot on Telegram")
 
 
 if __name__ == "__main__":
