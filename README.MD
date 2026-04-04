@@ -22,31 +22,11 @@ Heroku par apna khud ka bot deploy karne ke liye niche ke button par click karei
 
 ---
 
-## 🎯 **Official Bot**
-Apne groups aur channels me bot ko add karne ke liye:  
-<p align="center">
-    <a href="https://t.me/Sunoxmusic_bot">
-        <img src="https://img.shields.io/badge/Official%20Bot-Add%20Now-29ABE2?style=for-the-badge&logo=telegram" alt="Official Bot">
-    </a>
-</p>
-
----
-
 ## 🌐 **All Bots**
 Noxx Network ke sabhi bots ko dekhne ke liye:  
 <p align="center">
     <a href="https://t.me/NoxxNetwork/15">
         <img src="https://img.shields.io/badge/All%20Bots-Explore-FF6347?style=for-the-badge&logo=telegram" alt="All Bots">
-    </a>
-</p>
-
----
-
-## 🔥 **All Handles**
-Saare social handles ko explore karne ke liye:  
-<p align="center">
-    <a href="https://t.me/addlist/RpDpFE1rHFFiYWJl">
-        <img src="https://img.shields.io/badge/All%20Handles-Explore%20More-6a5acd?style=for-the-badge&logo=telegram" alt="All Handles">
     </a>
 </p>
 
@@ -83,17 +63,7 @@ Agar aapko koi bhi help chahiye ya feedback dena hai, to hamare Telegram group m
     </a>
 </p>
 
----
 
-## 🚀 **Contribute**
-Aap bhi Noxx Music ko behtar banane me madad kar sakte hain. GitHub par project ko fork kijiye aur apne valuable contributions dijiye.  
-<p align="center">
-    <a href="https://github.com/NoxxOP/NoxxMusic">
-        <img src="https://img.shields.io/badge/GitHub-Noxx%20Music-181717?style=for-the-badge&logo=github" alt="GitHub">
-    </a>
-</p>
-
----
 
 ✅ **Enjoy Noxx Music Bot** 🎵🔥  
 ✨ **Best Telegram Music Bot with Spotify Style Wave Effects and Smooth Streaming!** 🚀
