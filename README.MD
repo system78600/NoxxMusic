@@ -38,10 +38,7 @@ Mujhse judne ke liye mere handles par follow karein:
     <a href="https://t.me/WTF_WhyMeeh">
         <img src="https://img.shields.io/badge/Telegram-Contact-0088cc?style=for-the-badge&logo=telegram" alt="Telegram">
     </a>
-    <a href="https://instagram.com/Yaduwanshi_Nand">
-        <img src="https://img.shields.io/badge/Instagram-Yaduwanshi_Nand-E1306C?style=for-the-badge&logo=instagram" alt="Instagram">
-    </a>
-</p>
+  
 
 ---
 
