@@ -20,6 +20,13 @@ Heroku par apna khud ka bot deploy karne ke liye niche ke button par click karei
     </a>
 </p>
 
+<p align="center">
+  <a href="https://railway.app/template/system78600?referralCode=NoxxMusic">
+    <img src="https://railway.app/button.svg" alt="Deploy on Railway">
+  </a>
+</p>
+
+
 ---
 
 ## 🌐 **All Bots**
